@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/note.css">
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
@@ -21,27 +21,24 @@
         <li><a href="profile.html">Profile</a></li>
         </ul>
     </nav>
-    <main class="container">
+    <main class="container fade-in">
         <header class="page-header fade-in">
-            <h1 id="greeting-message">Good Morning</h1>
-            <p id="current-date">Today is...</p>
+            <h1>Quick Notes</h1>
+            <p>Jot down your thoughts, ideas, or reminders.</p>
         </header>
-        <section class="grid-3 fade-in">
-            <div class="card">
-                <h3>Total Habits</h3>
-                <p id="total-habits">0</p>
+        
+        <div class="card">
+            <div class="input-group">
+                <input type="text" id="note-input" placeholder="Enter a new note.">
+                <button id="save-note-btn">Save Note</button>
             </div>
-            <div class="card">
-                <h3>Total Task Today</h3>
-                <p id="total-task">0</p>
-            </div>
-            <div class="card">
-                <h3>Completed Habits</h3>
-                <p id="completed-habits">0</p>
-            </div>                                
-        </section>
+            
+            <ul class="item-list" id="note-list">
+                <!-- Data populated dynamically via Javascript -->
+            </ul>
+        </div>
     </main>
-    <script src="js/index.js"></script>
+    <script src="js/note.js"></script>
     <script src="js/global.js"></script>
 </body>
 </html>

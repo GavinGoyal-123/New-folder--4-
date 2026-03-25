@@ -1,0 +1,41 @@
+/* navbar */
+/* .nav-links{
+    display: flex;
+} */
+.nav-links li{
+    margin-left: 0PX;
+    cursor: pointer;
+    list-style: none;
+}
+/* header */
+#greeting-message{
+    font-size: 45px;
+    font-weight:bolder;
+}
+#current-date{
+    font-size: 25px;
+    font-weight: 500;
+}
+.card {
+    flex: 1;         
+    max-width: 300px;
+    padding: 0px 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+/* section */
+.grid-3{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap:20px;
+}
+.card p{
+    color: blue;
+    font-weight: bold;
+    font-size: 35px;
+}
+#total-task{
+    color:rgb(53, 203, 36);
+}

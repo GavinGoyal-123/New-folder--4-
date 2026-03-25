@@ -3,10 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Daily Life Manager - Habits</title>
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/habit.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">Daily Manager</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="habit.html">Habits</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <main class="container fade-in">
+        <header class="page-header">
+            <h1>Daily Habits</h1>
+            <p>Track your daily routines to build better habits.</p>
+        </header>
+        
+        <div class="card">
+            <div class="input-group">
+                <input type="text" id="habit-input" placeholder="Enter a new habit (e.g., Drink water)">
+                <button id="add-habit-btn">Add Habit</button>
+            </div>
+            
+            <ul class="item-list" id="habits-list">
+                <!-- Data populated dynamically via Javascript -->
+            </ul>
+        </div>
+    </main>
+
+    <script src="js/global.js"></script>
     <script src="js/habit.js"></script>
 </body>
 </html>
