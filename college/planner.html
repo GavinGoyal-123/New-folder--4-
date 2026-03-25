@@ -8,6 +8,37 @@
     <link rel="stylesheet" href="css/global.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">
+            Daily Manager
+        </div>
+        <ul class="nav-links">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="habit.html">Habits</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="notes.html">Notes</a></li>
+        <li><a href="progress.html">Progress</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+    <main class="container fade-in">
+        <header class="page-header fade-in">
+            <h1>Daily Planner</h1>
+            <p>Organize your day with a simple schedule planner.</p>
+        </header>
+        
+        <div class="card">
+            <div class="input-group">
+                <input type="text" id="plan-input" placeholder="What do you want to do?">
+                <input type="time" id="time-input" placeholder="12:30">
+                <button id="save-plan-btn">Add Task</button>
+            </div>
+            
+            <ul class="item-list" id="plan-list">
+                
+            </ul>
+        </div>
+    </main>
     <script src="js/planner.js"></script>
     <script src="js/global.js"></script>
 </body>

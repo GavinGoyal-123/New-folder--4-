@@ -49,3 +49,15 @@ input[type="checkbox"] {
     accent-color: var(--primary);
     cursor: pointer;
 }
+.item-table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+    border: none;
+}
+.item-table th{
+    padding: 15px 20px;
+    background-color: #6c63ff;
+    color: white;
+    font-size: 20px;
+}
