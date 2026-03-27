@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Life Manager - Habits</title>
-    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/habit.css">
+    <link rel="stylesheet" href="css/global.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="logo">Daily Manager</div>
@@ -25,36 +27,50 @@
             <h1>Daily Habits</h1>
             <p>Track your daily routines to build better habits.</p>
         </header>
-        
+
         <div class="card">
             <div class="input-group">
                 <input type="text" id="habit-input" placeholder="Enter a new habit (e.g., Drink water)">
                 <button id="add-habit-btn">Add Habit</button>
             </div>
-            
+
             <ul class="item-list" id="habits-list">
                 <!-- Data populated dynamically via Javascript -->
             </ul>
-        </div> 
-        <br>
-        <div>
-            <table border="1px solid-black" class="item-list" id="habits-list">
-                <tr>
-                <th>Habit</th>
-                <th>Mon</th>
-                <th>Tues</th>
-                <th>Wed</th>
-                <th>Thur</th>
-                <th>Fri</th>
-                <th>Sat</th>
-                <th>Sun</th>
-                <th>Delete</th>
-                </tr>
+        </div>
+        <div class="weekly-tracker">
+            <div class="weekly-heading">
+                <h2>Weekly Tracker</h2>
+                <div class="weekly-input">
+                    <input type="text" placeholder="Weekly habit to track" id="w-input">
+                    <button id="add-weekly">Add Habit</button>
+                </div>
+            </div>
+
+            <table id="weekly-habit">
+                <thead>
+                    <tr>
+                        <th>Habit</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                        <th>Progress</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="weekly-list">
+                </tbody>
             </table>
         </div>
     </main>
-    
+
     <script src="js/global.js"></script>
     <script src="js/habit.js"></script>
 </body>
+
 </html>
