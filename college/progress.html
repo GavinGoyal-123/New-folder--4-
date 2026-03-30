@@ -3,12 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/progress.css">
+    <title>Daily Life Manager - Progress</title>
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/progress.css">
 </head>
 <body>
-    <script src="js/progress.js"></script>
+    <nav class="navbar">
+        <div class="logo">Daily Manager</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="habit.html">Habits</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="notes.html">Notes</a></li>
+            <li><a href="progress.html">Progress</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <main class="container fade-in">
+        <header class="page-header">
+            <h1>Your Progress</h1>
+            <p>See how well you're doing today.</p>
+        </header>
+
+        <div class="grid-3" style="justify-content: center; align-items: stretch;">
+            <div class="card" style="text-align: center;">
+                <h3 style="margin-bottom: 1.5rem;">Habits Completion</h3>
+                <div class="progress-circle" id="habits-circle" style="--percentage: 0%;">
+                    <span class="progress-text">0%</span>
+                </div>
+                <p id="habits-progress" style="color: var(--text-muted); font-weight: 500;">0 / 0 Completed</p>
+            </div>
+
+            <div class="card" style="text-align: center; display: flex; flex-direction: column; justify-content: center;">
+                <h3 style="margin-bottom: 1rem;">Tasks Scheduled Today</h3>
+                <p id="tasks-progress" style="font-size: 3rem; color: var(--secondary); font-weight: 700;">0</p>
+                <p style="color: var(--text-muted); margin-top: 1rem;">Keep up the momentum!</p>
+            </div>
+        </div>
+    </main>
+
     <script src="js/global.js"></script>
+    <script src="js/progress.js"></script>
 </body>
 </html>
